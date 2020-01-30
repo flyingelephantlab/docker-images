@@ -1,2 +1,2 @@
 # docker-images
-Base docker images for Shahry and Yaoota
+Base docker images for Flying Elephant Lab projects
