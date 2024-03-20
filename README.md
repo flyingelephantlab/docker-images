@@ -7,7 +7,7 @@ You can read the detailed guide [here](https://www.docker.com/blog/multi-arch-im
 The following is the TLDR version of the required commands:
 
 ### Initial setup
-- Clone the repo (`git clone git@github.com:flyingelephantlab/docker-images.git`), and `cd` into it.
+- Clone the repo (`git clone git@github.com:shahryorg/docker-images.git`), and `cd` into it.
 - Make any changes you would like to the image by editing the `Dockerfile`
 
 #### 1: (_Skip this if already done_) Initialize a buildx instance
@@ -20,4 +20,4 @@ Make sure you are logged in to dockerhub using ```docker login```. Please ask fo
 
 #### 3: Build, and push the image
 This is combined in one command. You can split the build/push separately if you want.
-Simply run: ```docker buildx build --platform linux/amd64,linux/arm64 -t flyingelephantlab/python:3.10-slim-buster --push .```
+Simply run: ```docker buildx build --platform linux/amd64,linux/arm64 -t shahryorg/python:3.10-slim-buster --push .```
